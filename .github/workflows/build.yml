@@ -11,3 +11,6 @@ runs-on: ubuntu-latest
       with:
          php-version: '8.2'
          extensions: xdebug-beta
+  - name: Composer install  
+     uses: nanasess/composer-installer-action@master
+     run: composer install
